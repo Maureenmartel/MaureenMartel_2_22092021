@@ -3,35 +3,74 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/7cf134afba.js" crossorigin="anonymous"></script>
-        <title>Projet 2-Reservia</title>
+        <title>Reservia</title>
     </head>
 <body>
 <!-- header -->
 <header>
-    <img class="logoheader" src="Images/logo/Reservia@3x.png" alt="Logo de l'agence Reservia"/>
-<div class=navbar>
     <nav>
-        <a href="#hebergements">Hébergements</a>
-        <a href="#activites">Activités</a>
-        <a href="inscription.html">S'incrire</a>   
+        <div class="flex-between">
+            <img class="logo-header" src="Images/logo/Reservia@3x.png" alt="Logo de l'agence Reservia"/>
+            <div class="size-nav flex-around">
+                <div class="size-link flex-center border-nav">
+                    <a class="color-link-blue decoration-none" href="#hebergements">Hébergements</a>
+                </div>
+                <div class="size-link flex-center border-nav-transparent">
+                    <a class="color-link-black decoration-none" href="#activites">Activités</a>
+                </div>
+                <div class="size-link flex-center border-nav-transparent">
+                    <a class="color-link-blue decoration-none" href="inscription.html">S'incrire</a>
+                </div>
+            </div> 
+        </div>  
     </nav>
-</div>
 </header>
 <!-- section recherche -->
-<section class="recherche">
-    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-    <p>En plein centre ville ou en pleine nature</p>
-    <i class="fas fa-map-marker-alt"></i><input type="search" name="Recherche" placeholder="Marseille, France"/><button>Rechercher</button>
+<section>
+    <div>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+    </div>
+    <div class="border-search flex-center">
+        <div class="color-back-gray flex-center size-icon ">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div>
+            <input class="entry-field border-none padding-search flex-center" type="search" name="Recherche" placeholder="Marseille, France"/>
+        </div>
+        <div class="color-back-blue flex-center button-search">
+            <div>Rechercher</div>
+        </div>
+    </div>
 </section>
 <!-- section filtres -->
-    <i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
-    <div class="filtres">
-    <span>Filtres</span>
-    <i class="fas fa-money-bill-wave"></i><div>Économique</div>
-    <i class="fas fa-child"></i><div>Familial</div>
-    <i class="fas fa-heart"></i><div>Romantique</div>
-    <i class="fas fa-dog"></i><div>Animaux Autorisés</div>
+    <div class="filters margin-filters">
+        <div class="margin-title-filters">Filtres</div>
+            <div class="filters-text-icons flex-between">
+                <i class="fas fa-money-bill-wave fa-lg filters-icons flex-center"></i>
+                <div class="filters-text flex-center">Économique</div>
+            </div>
+            <div class="filters-text-icons flex-between">
+                <i class="fas fa-child fa-lg filters-icons flex-center"></i>
+                <div class="filters-text flex-center">Familial</div>
+            </div>
+            <div class="filters-text-icons flex-between">
+                <i class="fas fa-heart fa-lg filters-icons flex-center"></i>
+                <div class="filters-text flex-center">Romantique</div>
+            </div>
+            <div class="filters-text-icons flex-between">
+                <i class="fas fa-dog fa-lg filters-icons flex-center"></i>
+                <div class="filters-text flex-center">Animaux Autorisés</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <i class="fas fa-info"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
 <!-- section hebergements -->
 <main>
