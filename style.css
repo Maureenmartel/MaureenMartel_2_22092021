@@ -1,0 +1,135 @@
+/*General*/
+html {
+    font-family: 'Raleway', sans-serif;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.decoration-none {
+    text-decoration: none;
+}
+.text-bold {
+    font-weight: bold;
+}
+.color-back-gray {
+    background-color: #F2F2F2;
+}
+.color-back-blue {
+    background-color: #0065FC;
+}
+/*header*/
+.logo-header {
+    width: 120px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+/*nav*/
+nav {
+    height: 100px;
+}
+.size-nav {
+    width: 45%;
+}
+.border-nav {
+    border-top: 1px solid #0065FC ;
+}
+.color-link-blue {
+    color: #0065FC;
+}
+.color-link-black {
+    color: black;
+}
+.size-link {
+    width: 140px;
+    height: 99px;
+}
+.border-nav-transparent {
+    border-top: 1px solid transparent ;
+}
+/*section recherche*/
+.border-search {
+   width: 400px;
+   border-radius: 10px;
+   border: 0.5px solid #F2F2F2;
+}
+.size-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+}
+.entry-field {
+    width: 230px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;   
+}
+.border-none {
+   border: none; 
+}
+.padding-search {
+    padding-left: 20px;
+}
+.button-search {
+    width: 120px;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+/*section filtres*/
+.filters {
+    display: flex;
+    align-items: center;
+}
+.margin-filters {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.margin-title-filters {
+    margin-right: 20px;
+}
+.filters-text-icons {
+    border: 2px solid #F2F2F2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.filters-icons {
+    margin-left: -2px;
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+.filters-text {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+}
+.filters-text-icons:hover > .filters-text {
+    color: #0065FC;
+}
+.filters-text-icons:hover > .filters-icons {
+    color: white;
+    background-color: #0065FC ;
+}
+
+
+/*section hebergements*/
+/*section activités*/
+/*footer*/
