@@ -462,9 +462,8 @@ li .footer-links:hover {
     font-size: larger;
 }
 /* ---------- ----- ----- RESPONSIVE TABLETTES ----- ----- ---------- */
-@media screen and (max-width: 768px)
+@media screen and (min-width: 601px) and (max-width: 768px) {
 /*Header & Nav*/
-{
     .display-link {
         display: flex;
         justify-content: row;
@@ -585,9 +584,8 @@ li .footer-links:hover {
     }
 }
 /* ---------- ----- ----- RESPONSIVE SMARTPHONE ----- ----- ---------- */
-@media screen and (max-width: 600px)
+@media screen and (max-width: 600px) {
 /* section filtres*/
-{
     .display-link {
         display: flex;
         justify-content: row;
@@ -631,6 +629,9 @@ li .footer-links:hover {
         width: 50px;
         cursor: pointer;
     }
+    .fa-search:before {
+        padding: 17px;
+    }
     .magnifying-glass {
         visibility: visible;
     }
@@ -642,6 +643,7 @@ li .footer-links:hover {
         margin-top: 30px;
         margin-bottom: 30px;
     }
+    /*
     .menu-link:hover {
         color: #0065FC;
         border-bottom: solid 3px #0065FC;
@@ -652,6 +654,7 @@ li .footer-links:hover {
         justify-content: center;
         align-items: center;
     }
+    */
     .logo-header {
         margin-bottom: 20px;
     }
@@ -722,6 +725,7 @@ li .footer-links:hover {
         display: block;
         width: 90%;
         margin: 10px 0 0 20px;
+        height: 100%;
     }
     .card-activities1, .card-activities2, .card-activities3 {
         display: flex;
