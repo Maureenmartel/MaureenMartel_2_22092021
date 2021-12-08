@@ -8,9 +8,14 @@ html {
 .color-gray {
     color: #F2F2F2;
 }
-.box {
+* {
     box-sizing: border-box;
  }
+
+/* DEBORDEMENTS EVIDENCE */
+/* * {
+    border: solid 1px red;
+}
 /* ---------- HEADER DESKTOP ---------- */
 .menu {
     display: flex;
@@ -19,7 +24,6 @@ html {
 }
 .logo-header {
     width: 110px;
-    height: 40px;
     margin-left: 5px;
 }
 nav {
@@ -43,6 +47,7 @@ nav {
 .menu-link:hover {
     color: #0065FC;
     border-top: solid 3px #0065FC;
+    padding-top: 20px;
     transition: 0.4s;
     width: 140px;
     display: flex;
@@ -50,9 +55,14 @@ nav {
     align-items: center;
 }
 /* ---------- SECTION RECHERCHE DESKTOP ---------- */
+h2 {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
 .block-search-field {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0 30px 0 30px;
 }
 .icon-map {
     background-color: lightgray;
@@ -108,8 +118,11 @@ nav {
     align-items: center;
     margin: 50px 30px 40px 30px;
 }
-.title-filters {
+.block-filters {
     margin-right: 20px;
+}
+.h-filters {
+    padding-right: 30px;
 }
 .filters-text-icons {
     border: 2px solid #F2F2F2;
@@ -133,8 +146,7 @@ nav {
 }
 .filters-text {
     height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px 0 20px;
     border-radius: 25px 25px 25px 25px;
     display: flex;
     justify-content: center;
@@ -170,10 +182,8 @@ nav {
 .container-lodging {
     width: 870px;
     height: 610px;
-    margin-right: 20px;
-    margin-left: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 0 20px 0 30px;
+    padding: 0 20px 0 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -210,8 +220,8 @@ nav {
 .card-image {
     width: 235px;
     height: 115px;
-    margin: auto;
     margin-top: 3px;
+    padding-left: 4px;
     border: 1px solid transparent;
     border-radius: 10px 10px 0 0;
     display: block;
@@ -238,11 +248,8 @@ nav {
 .container-most-popular {
     width: 470px;
     height: 600px;
-    margin-left: 20px;
-    margin-right: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
+    margin: 0 30px 0 20px;
+    padding: 10px 20px 0 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -251,9 +258,6 @@ nav {
     flex: 1;
     border-radius: 10px;
     background-color: #F2F2F2;
-}
-.most-popular {
-    margin-left: -60px;
 }
 .card-mp {
     width: 340px;
@@ -274,7 +278,6 @@ nav {
 .card-image-mp {
     width: 125px;
     height: 135px;
-    margin: auto;
     margin-top: 3px;
     border: 1px solid transparent;
     border-radius: 10px 0px 0px 10px;
@@ -288,8 +291,8 @@ nav {
     box-sizing: border-box;
 }
 .card-title-mp {
-    padding-left: 5px;
     margin-top: -10px;
+    padding-left: 5px;  
 }
 .card-rating-mp {
     margin-top: 50px;
@@ -306,7 +309,10 @@ nav {
     padding-left: 30px;
 }
 .icon-mp {
-    margin-left: 120px;
+    margin-left: 175px;
+}
+.most-popular {
+    margin-left: -30px;
 }
 .block3 {
     display: flex;
@@ -315,8 +321,7 @@ nav {
 }
 /* ---------- SECTION ACTIVITES DESKTOP ---------- */
 .block-activities {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0 50px 0;
 }
 .container-activities {
     display: flex;
@@ -332,78 +337,78 @@ nav {
     font-weight: bold;
 }
 .card-activities1 {
-    width: 300px;
+    width: 22%;
     height: 450px;
     border: 2px solid #F2F2F2;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
 }
 .card-activities2 {
-    width: 300px;
+    width: 22%;
     height: 240px;
     border: 2px solid #F2F2F2;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
 }
 .card-activities3 {
-    width: 300px;
+    width: 22%;
     height: 165px;
     border: 2px solid #F2F2F2;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
 }
 .card-activities4 {
-    width: 300px;
+    width: 22%;
     height: 450px;
     border: 2px solid #F2F2F2;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
 }
 .card-activities5 {
-    width: 300px;
+    width: 22%;
     height: 195px;
     border: 2px solid #F2F2F2;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
 }
 .card-activities6 {
-    width: 300px;
+    width: 22%;
     height: 210px;
     border: 2px solid #F2F2F2;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
 }
 .image-activities1 {
-    width: 300px;
+    width: 100%;
     height: 390px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
 }
 .image-activities2 {
-    width: 300px;
+    width: 100%;
     height: 180px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
 }
 .image-activities3 {
-    width: 300px;
+    width: 100%;
     height: 110px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
 }
 .image-activities4 {
-    width: 300px;
+    width: 100%;
     height: 390px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
 }
 .image-activities5 {
-    width: 300px;
+    width: 100%;
     height: 140px;
     border-radius: 10px 10px 0 0;
 }
 .image-activities6 {
-    width: 300px;
+    width: 100%;
     height: 155px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
@@ -428,9 +433,7 @@ nav {
     background-color: #F2F2F2;
     height: 220px;
     margin-top: 62px;
-    padding-left: 2%;
-    padding-right: 20%;
-    padding-top: 30px;
+    padding: 30px 300px 0 0;
     display: flex;
     justify-content: space-between;
 }
@@ -462,31 +465,14 @@ li .footer-links:hover {
     font-size: larger;
 }
 /* ---------- ----- ----- RESPONSIVE TABLETTES ----- ----- ---------- */
-@media (max-width: 768px) {
-/*Header & Nav*/
-    .display-link {
-        display: flex;
-        justify-content: row;
-        align-items: center;
-    }
-    .menu-link:hover {
-        color: #0065FC;
-        border-bottom: solid 3px #0065FC;
-        border-top: none;
-        padding-bottom: 15px;
-        transition: 0.4s;
-        width: 140px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+@media (max-device-width: 992px) {
+/* Section Filtres - Tablettes */
     .filters {
         display: flex;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
     }
-    .filters-text-icons {
-        margin-top: 5px;
-        margin-bottom: 5px;
+    .filters-pad {
+        margin-left: 84px;
     }
 /*Section Hébergements*/
     .block-lodging {
@@ -582,40 +568,60 @@ li .footer-links:hover {
         justify-content: center;
         font-size: small;
     }
-}
+}   
 /* ---------- ----- ----- RESPONSIVE SMARTPHONE ----- ----- ---------- */
-@media (max-width: 600px) {
-    .display-link {
-        display: flex;
-        justify-content: row;
-        align-items: center;
+@media (max-device-width: 768px) {
+/* Général - mobile */
+/* Nav - mobile */
+    body {
+        margin: 1px;
     }
-    .menu-link:hover {
-        color: #0065FC;
-        border-bottom: solid 2px #0065FC;
-        border-top: none;
-        padding-bottom: 15px;
-        transition: 0.4s;
-        width: 140px;
+    .menu {
         display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .filters {
-        display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        margin-top: 20px;        
     }
-    .filters-text-icons {
-        margin-top: 5px;
-        margin-bottom: 5px;
+    .logo-header {
+        margin-bottom: 20px;
     }
-/*Section Recherche*/
+    .size-nav {
+        width: 100%;
+    }
+    .display-link {
+        border-bottom: solid 4px #F2F2F2;
+        width: 50%;
+        padding-bottom: 10px;
+    }
+    .display-link-blue {
+        border-bottom: solid 4px #0065FC;
+        width: 50%;
+        padding-bottom: 10px;
+    }
+    .link-blue {
+        color: #0065FC;
+    }
+    .main-title {
+        font-size: 20px;
+    }
+    .secondary-title {
+        font-size: 15px;
+    }
+/*Section Recherche - mobile*/
+    .block-search-field {
+        margin: 5px 10px 5px 15px;
+    }
+    .border-search {
+        width: 90%;
+    }
+    .icon-map {
+        width: 60px;
+        background-color: #F2F2F2;
+    }
     .button-search {
-        visibility: hidden;
+        display: none;
     }
     .entry-field {
-        width: 200px;
+        width: 100%;
     }
     .fa-search {
         display: flex;
@@ -634,17 +640,28 @@ li .footer-links:hover {
     .magnifying-glass {
         visibility: visible;
     }
-/*Section Hébergements*/
-    .menu {
+/* Section Filtres - mobile */
+    .title-filters {
+        width: 99%;
+    }
+    .h-filters {
+        width: 99%;
+        font-size: 16px;
+    }
+    .filters {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin : 10px 5px 10px 15px;         
     }
-    .logo-header {
-        margin-bottom: 20px;
+    .filters-text-icons {
+        margin: 5px 0 5px 0;
     }
+    .icon-info {
+        width: 25px;
+        height: 25px;
+        margin: 0 10px 0 -10px;
+    }
+/*Section Hébergements - mobile*/
     .block-lodging {
         display: flex;
         flex-direction: column;
@@ -657,28 +674,41 @@ li .footer-links:hover {
         order: 1;
     }
     .container-most-popular {
-        width: 85%;
+        width: 100%;
+        border-radius: 0;
+        margin: auto;
     }
-    .card-mp, .card-image-mp, .card-body-mp {
-        width: 85%;
-        margin-bottom: 15px;
+    .card-mp {
+        width: 100%;  
+    }
+    .card-image-mp {
+        width: 55%;
+        padding-left: 5px;
+    }
+    .card-body-mp {
+        width: 80%;
+        align-items: center ;
     }
     .title-mp {
         width: 80%;
-        justify-content: center;
     }
     .container-lodging {
-        width: 85%;
-        margin: 10px 0 0 20px;
+        width: 96%;
+        margin: 0 0 0 15px;
+        padding: 5px 0 5px 0;
         background-color: white;
     }
+    #lodging {
+        width: 95%;
+        margin-left: 5px;
+    }
     .card {
-        width: 510px;
-        height: 180px;
+        width: 100%;
+        height: 190px;
         border: none;
     }
     .card-image {
-        width: 510px;
+        width: 95%;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
@@ -688,10 +718,7 @@ li .footer-links:hover {
         font-size: small;
     }
     .load-more {
-        margin-left: -20px;
-    }
-    #lodging {
-        margin-left: 10px; 
+        padding-left: 150px;
     }
     .card-mp:hover {
         cursor: pointer;
@@ -707,34 +734,46 @@ li .footer-links:hover {
         display: flex;
         flex-direction: column;
     }
-/*section activités*/
+    .load-more {
+        width: 100%;
+    }
+/*section activités - mobile*/
     .container-activities {
         display: block;
-        width: 90%;
-        margin: 10px 0 0 20px;
+        width: 95%;
         height: 100%;
+    }
+    .block-activities {
+        margin: 20px 0 0 -5px;
+    }
+    #activities {
+        margin: 15px 0 5px 25px;
+        padding-bottom: 10px;
     }
     .card-activities1, .card-activities2, .card-activities3 {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
+        align-items: left;
+        width: 95%;
         height: 130px;
+        margin-bottom: 10px;
+        border-radius: 15px 15px 0 0;
     }
     .card-activities4, .card-activities5, .card-activities6 {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
+        align-items: left;
+        width: 95%;
         height: 130px;
+        margin-bottom: 10px;
+        border-radius: 15px 15px 0 0;
     }
     .image-activities1, .image-activities2, .image-activities3 {
-        width: 510px;
+        max-width: 100%;
         height: 95px;
         border-radius: 15px 15px 0 0;
     }
     .image-activities4, .image-activities5, .image-activities6 {
-        width: 510px;
         max-width: 100%;
         height: 95px;
         border-radius: 15px 15px 0 0;
@@ -748,17 +787,13 @@ li .footer-links:hover {
         transition: 0.4s;
         box-shadow: 1px 1px 1px 1px #F2F2F2;
     }
-/*Footer*/
+/*Footer - mobile*/
     .footer-box {
-        flex-direction: column;
         height: max-content;
         background-color: #F2F2F2;
-        padding-left: 2%;
-        padding-right: 20%;
-        padding-top: 30px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         font-size: small;
     }
 }
-/*nav mettre ma width et mon liseret sur display link responsive iphone*/
