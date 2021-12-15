@@ -10,13 +10,7 @@ html {
 }
 * {
     box-sizing: border-box;
- }
-
-/* DEBORDEMENTS EVIDENCE
-* {
-    border: solid 1px red;
 }
-*/
 /* ---------- HEADER DESKTOP ---------- */
 .menu {
     display: flex;
@@ -249,7 +243,7 @@ a:link {
     width: 470px;
     height: 600px;
     margin: 0 30px 0 20px;
-    padding: 10px 20px 0 20px;
+    padding: 10px 20px 5px 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -284,19 +278,15 @@ a:link {
     display: block;
     object-fit: cover;
 }
-.card-body-mp {
-    text-align: left;
-    padding: 10px;
-    margin-top: -15px;
-    box-sizing: border-box;
-}
-.card-title-mp {
+.card-contents-mp {
+    padding-left : 15px;
     margin-top: -10px;
-    padding-left: 5px;  
 }
-.card-rating-mp {
-    margin-top: 50px;
-    padding-left: 5px;
+.star {
+    margin-top: 40px;
+}
+.star-line-break {
+    padding-top: 5px;
 }
 .container-most-popular > p {
     padding-left: 25px;
@@ -313,12 +303,6 @@ a:link {
 }
 .most-popular {
     margin-left: -30px;
-}
-.star {
-    padding-top: 33px;
-}
-.star-line-break {
-    padding-top: 15px;
 }
 .block3 {
     display: flex;
@@ -480,7 +464,7 @@ li .footer-links:hover {
     .filters-pad {
         margin-left: 84px;
     }
-/*Section Hébergements*/
+/*Section Hébergements - Tablettes*/
     .block-lodging {
         display: flex;
         flex-direction: column;
@@ -494,10 +478,6 @@ li .footer-links:hover {
     }
     .container-most-popular {
         width: 90%;
-    }
-    .card-mp, .card-image-mp, .card-body-mp {
-        width: 85%;
-        margin-bottom: 15px;
     }
     .title-mp {
         width: 80%;
@@ -522,7 +502,7 @@ li .footer-links:hover {
     #lodging {
         margin-left: 10px; 
     }
-/*section activités*/
+/*section activités - Tablettes*/
     .container-activities {
         width: 90%;
         margin: 10px 0 0 20px;
@@ -546,7 +526,7 @@ li .footer-links:hover {
     .title-activities {
         margin-top: -15px;
     }
-/*Footer*/
+/*Footer - Tablettes*/
     .footer-box {
         background-color: #F2F2F2;
         height: 180px;
@@ -561,7 +541,6 @@ li .footer-links:hover {
 }   
 /* ---------- ----- ----- RESPONSIVE SMARTPHONE ----- ----- ---------- */
 @media (max-width: 768px) {
-/* Général - mobile */
 /* Nav - mobile */
     body {
         margin: 1px;
@@ -678,14 +657,15 @@ li .footer-links:hover {
     .card-mp {
         width: 100%;  
     }
-    .card-image-mp {
-        width: 40%;
-        height: 100%;
-        padding-left: 5px;
+    .card-mp a {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
     }
-    .card-body-mp {
-        width: 60%;
-        align-items: center ;
+    .card-image-mp {
+        width: 35%;
+        height: 100%;
+        padding: 0 0 5px 5px;
     }
     .title-mp {
         width: 100%;
@@ -694,8 +674,15 @@ li .footer-links:hover {
     .most-popular {
         padding: 0 0 0 5px;
     }
+    .card-contents-mp {
+        width: 60%;
+        align-items: center;
+    }
     .star {
-        padding-top: 13px;
+        margin-top: 35px;
+    }
+    .star-line-break {
+        padding-top: 5px;
     }
     .container-lodging {
         width: 96%;
